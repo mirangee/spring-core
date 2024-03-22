@@ -16,12 +16,11 @@ package com.spring.core.lombok;
 import lombok.*;
 
 @Setter @Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor // 기본생성자
+@AllArgsConstructor // 모든 필드를 초기화하는 생성자
 @ToString
 @EqualsAndHashCode
 public class Person {
     private String name;
     private int age;
-
 }
